@@ -2,6 +2,11 @@
   "name": "bloom",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/api/*": {
+      "target": "http://localhost:5000"
+    }
+  },
   "dependencies": {
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
