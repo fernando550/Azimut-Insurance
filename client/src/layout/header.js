@@ -4,6 +4,11 @@ import {Link} from "react-router-dom";
 
 class Header extends Component {
   render() {
+
+    const fbLink = "https://www.facebook.com/azimutinsurance/"
+    const instaLink = "https://instagram.com/azimutinsurance"
+    const targetTab = "_blank"
+
     return (
       <div id="nav-header-layout" className="">
 
@@ -34,13 +39,13 @@ class Header extends Component {
               <Link className="nav-link px-4 border border-top-0 border-bottom-0 border-left-0" to="/location">Location</Link>
 
               {/* FACEBOOK LINK*/}
-              <a className="nav-link px-4" href="https://www.facebook.com/azimutinsurance/" target="_blank" rel="noopener noreferrer">
-                <span><i className="fa fa-facebook"></i></span>
+              <a className="nav-link px-4" href={fbLink} target={targetTab} rel="noopener noreferrer">
+                <span><i className="fa fa-lg fa-facebook-square"></i></span>
               </a>
 
               {/* INSTAGRAM LINK*/}
-              <a className="nav-link px-4" href="https://instagram.com/azimutinsurance" target="_blank" rel="noopener noreferrer">
-                <span style={{marginLeft: '-25px'}}><i className="fa fa-instagram"></i></span>
+              <a className="nav-link px-4" href={instaLink} target={targetTab} rel="noopener noreferrer">
+                <span style={{marginLeft: '-25px'}}><i className="fa fa-lg fa-instagram"></i></span>
               </a>
 
             </div>

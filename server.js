@@ -1,16 +1,32 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
+const sgMail = require('@sendgrid/mail');
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const app = express();
 
-app.get('/api', (req, res) => {
-  // add sendgrid stuff here
-  res.send({msg: "this message came from server. Check server.js"});
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.post('/sendMail', async (req, res) => {
+  console.log(req.body);
+  const msg = {
+    to: 'EduardoG@azimutinsurance.com',
+    from: req.body.userEmail,
+    subject: req.body.userName,
+    text: req.body.Telephone + req.body.userMessage
+  };
+
+  await sgMail.send(msg);
+  // res.send({msg: 'success'});
 });
 
 app.use(express.static('client/build'));
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 });
 
 const port = process.env.PORT || 5000;

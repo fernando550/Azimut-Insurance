@@ -1,7 +1,7 @@
 {
-  "name": "azimut",
+  "name": "azimutSERV",
   "version": "1.0.0",
-  "description": "",
+  "description": "server-file",
   "main": "server.js",
   "scripts": {
     "start": "babel-node server.js",
@@ -25,6 +25,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.1.4",
     "axios": "^0.16.2",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
@@ -32,6 +33,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
     "express": "^4.15.4"
   }
 }
