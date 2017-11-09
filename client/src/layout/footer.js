@@ -4,9 +4,9 @@ import React, {Component} from "react";
 class Footer extends Component {
   render() {
 
-    const fbLink = "https://www.facebook.com/azimutinsurance/"
-    const instaLink = "https://instagram.com/azimutinsurance"
-    const targetTab = "_blank"
+    const fbLink = "https://www.facebook.com/azimutinsurance/";
+    const instaLink = "https://instagram.com/azimutinsurance";
+    const targetTab = "_blank";
 
     return (
       <div id="footer-layout" className="row p-5">

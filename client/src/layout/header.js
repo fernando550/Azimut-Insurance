@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 class Header extends Component {
   render() {
 
-    const fbLink = "https://www.facebook.com/azimutinsurance/"
-    const instaLink = "https://instagram.com/azimutinsurance"
-    const targetTab = "_blank"
+    const fbLink = "https://www.facebook.com/azimutinsurance/";
+    const instaLink = "https://instagram.com/azimutinsurance";
+    const targetTab = "_blank";
 
     return (
       <div id="nav-header-layout" className="">
