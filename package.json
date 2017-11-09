@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "server-file",
   "main": "server.js",
+  "engines": {
+    "node": "7.10.1"
+  },
   "scripts": {
     "start": "babel-node server.js",
     "server": "nodemon server.js --exec babel-node",
