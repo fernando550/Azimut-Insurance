@@ -45,7 +45,7 @@ class Footer extends Component {
           </div>
           <div>
             <a href={fbLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-facebook-square"></i></span></a>
-            <a href={fbLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-instagram"></i></span></a>
+            <a href={instaLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-instagram"></i></span></a>
           </div>
           <div style={{fontSize: '10px', marginTop: '30px'}}>Copyright © 2017 Azimut Insurance Consultants - All Rights Reserved.</div>
         </div>

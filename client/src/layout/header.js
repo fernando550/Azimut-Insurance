@@ -28,7 +28,7 @@ class Header extends Component {
             {/* NAV MENU */}
             <div id="nav-header-links" className="navbar-nav">
               <div className="dropdown">
-                <a className="btn btn-danger dropdown-toggle" href="" role="" id="ddlButton" data-toggle="dropdown">
+                <a className="btn btn-danger dropdown-toggle" href="" id="ddlButton" data-toggle="dropdown">
                   Insurance
                 </a>
                 <div className="dropdown-menu dropdown-menu-right bg-danger" aria-labelledby="ddlButton">
