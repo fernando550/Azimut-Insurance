@@ -1,6 +1,6 @@
 {
   "name": "azimutSERV",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "server-file",
   "main": "server.js",
   "engines": {
