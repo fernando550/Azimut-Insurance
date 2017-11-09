@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/sendMail', async (req, res) => {
-  console.log(req.body);
+  console.log('client request: ', req.body);
   const msg = {
     to: 'EduardoG@azimutinsurance.com',
     from: req.body.userEmail,
@@ -20,8 +20,17 @@ app.post('/sendMail', async (req, res) => {
     text: req.body.Telephone + req.body.userMessage
   };
 
-  await sgMail.send(msg);
-  // res.send({msg: 'success'});
+  try {
+    let confirmation = await sgMail.send(msg);
+
+    if (confirmation) {
+      res.send({confirmation: true, error: false});
+    }
+  }
+  catch (e) {
+		console.log(e);
+		res.send({confirmation: false, error: true});
+	}
 });
 
 app.use(express.static('client/build'));

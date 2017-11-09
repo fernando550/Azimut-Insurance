@@ -13,8 +13,14 @@ class Footer extends Component {
         <div id="footer-page-location" className="col text-center border border-top-0 border-bottom-0 border-left-0">
           <h4 className="pb-3">LOCATION</h4>
           <div><span className="pr-2"><i className="fa fa-lg fa-map-marker"></i></span>Main Office</div>
-          <div>
+          <div className="pb-3">
             2100B NW 82nd Avenue, Miami, FL 33122
+          </div>
+          <div>
+            Monday - Friday: 9am - 6pm
+          </div>
+          <div>
+            Saturday: By appointment
           </div>
         </div>
 
@@ -30,10 +36,18 @@ class Footer extends Component {
           </div>
         </div>
 
+
+
         <div id="footer-page-social-media" className="col text-center">
           <h4 className="pb-3">SOCIAL MEDIA</h4>
-          <a href={fbLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-facebook-square"></i></span></a>
-          <a href={fbLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-instagram"></i></span></a>
+          <div className="pb-3">
+            Connect With Us!
+          </div>
+          <div>
+            <a href={fbLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-facebook-square"></i></span></a>
+            <a href={fbLink} target={targetTab} rel="noopener noreferrer" className="footer-link"><span className="px-1"><i className="fa fa-lg fa-instagram"></i></span></a>
+          </div>
+          <div style={{fontSize: '10px', marginTop: '30px'}}>Copyright © 2017 Azimut Insurance Consultants - All Rights Reserved.</div>
         </div>
       </div>
     );

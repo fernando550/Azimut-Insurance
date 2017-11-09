@@ -20,6 +20,11 @@ class Header extends Component {
             <img id="azimut-logo"src={logo} alt="Azimut Insurance"/>
           </a>
 
+          <div style={{marginLeft: '100px', color: 'white'}}>
+            <span className="pr-2"><i className="fa fa-phone"></i></span>
+            Call us: (305) 517-1106
+          </div>
+
             {/* NAV MENU */}
             <div id="nav-header-links" className="navbar-nav">
               <div className="dropdown">

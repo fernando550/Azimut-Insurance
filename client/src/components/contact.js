@@ -3,37 +3,28 @@ import axios from 'axios';
 
 class Contact extends Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-		  userName: 'Name',
-		  userEmail: 'Email',
-		  userPhone: 'Phone',
-		  userMessage: 'Message'
-		};
-	}
+  state = {
+	  userName: '',
+	  userEmail: '',
+	  userPhone: '',
+	  userMessage: '',
+	  confirmation: false,
+	  error: false
+	};
 
   handleSubmit = async (e) => {
   	e.preventDefault();
   	try {
-  		let res = await axios.post('/sendMail', {
-  		  userName: this.state.userName,
-  		  userEmail: this.state.userEmail,
-  		  userPhone: this.state.userPhone,
-  		  userMessage: this.state.userMessage
-  		});
-  		console.log(res);
+  		let res = await axios.post('/sendMail', this.state);
+
+  		let data = res.data;
+  		this.setState({confirmation: data.confirmation, error: data.error});
+
+      console.log('server response: ', this.state);
   	}
   	catch (e) {
   		console.log(e);
   	}
-
-      this.setState = {
-  		  userName: 'Name',
-  		  userEmail: 'Email',
-  		  userPhone: 'Phone',
-  		  userMessage: 'Message'
-  		};
   }
 
   onInputChange = (e) => {
@@ -48,60 +39,82 @@ class Contact extends Component {
       <div id="contact-component">
 
         {/* HEADER-1 */}
-        <h1 className="container py-3">Contact us and get a free quote!</h1>
+        <h1 className="container py-3">Contact Us</h1>
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
-          <form id="contact-form" className="mx-auto w-50" onSubmit={this.handleSubmit}>
-            <div className="form-group row">
-              <div className="col">
-                <input
-                    className="form-control"
-                    type="text" name="userName"
-                    value={this.state.userName}
-                    id="name-input"
+          {!this.state.confirmation &&
+            <form id="contact-form" className="mx-auto w-50" onSubmit={this.handleSubmit}>
+              <h4 className="form-group row justify-content-center pb-2">Get in touch for a free quote or any questions!</h4>
+              <div className="form-group row">
+                <div className="col">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userName"
+                      placeholder="Name"
+                      value={this.state.userName}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+              </div>
+              <div className="form-group row">
+                <div className="col">
+                  <input
+                    className="form-control shadow"
+                    type="email"
+                    name="userEmail"
+                    placeholder="Email"
+                    value={this.state.userEmail}
+                    id="email-input"
                     onChange={this.onInputChange}/>
+                </div>
               </div>
-            </div>
-            <div className="form-group row">
-              <div className="col">
-                <input
-                  className="form-control"
-                  type="email"
-                  name="userEmail"
-                  value={this.state.userEmail}
-                  id="email-input"
-                  onChange={this.onInputChange}/>
+              <div className="form-group row">
+                <div className="col">
+                  <input
+                    className="form-control shadow"
+                    type="tel"
+                    name="userPhone"
+                    placeholder="Phone"
+                    value={this.state.userPhone}
+                    id="tel-input"
+                    onChange={this.onInputChange}/>
+                </div>
               </div>
-            </div>
-            <div className="form-group row">
-              <div className="col">
-                <input
-                  className="form-control"
-                  type="tel"
-                  name="userPhone"
-                  value={this.state.userPhone}
-                  id="tel-input"
-                  onChange={this.onInputChange}/>
+              <div className="form-group row">
+                <div className="col">
+                  <textarea
+                    className="form-control shadow"
+                    type="text"
+                    name="userMessage"
+                    placeholder="Message"
+                    value={this.state.userMessage}
+                    id="message-input"
+                    onChange={this.onInputChange}></textarea>
+                </div>
               </div>
-            </div>
-            <div className="form-group row">
-              <div className="col">
-                <textarea
-                  className="form-control"
-                  type="text"
-                  name="userMessage"
-                  value={this.state.userMessage}
-                  id="message-input"
-                  onChange={this.onInputChange}></textarea>
+              <div className="form-group row justify-content-center">
+                <button type="submit" className="btn btn-danger shadow">
+                  <span className="pr-1"><i className="fa fa-paper-plane"></i></span>Submit
+                </button>
               </div>
+            </form>
+          }
+
+          {this.state.confirmation &&
+            <div className="alert alert-success">
+              Thank You! We will address your message as soon as possible.
             </div>
-            <div className="form-group row justify-content-center">
-              <button type="submit" className="btn btn-danger">
-                <span className="pr-1"><i className="fa fa-paper-plane"></i></span>Submit
-              </button>
+          }
+
+          {this.state.error &&
+            <div className="alert alert-danger">
+              Sorry, there seems to have been a problem with your submission.
+              Please try again, or check back later to see if the issue was resolved.
             </div>
-          </form>
+          }
+
         </div>
 
       </div>
