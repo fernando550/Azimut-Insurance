@@ -43,7 +43,7 @@ class Contact extends Component {
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
-          {!this.state.confirmation &&
+          {!this.state.confirmation && !this.state.error &&
             <form id="contact-form" className="mx-auto w-50" onSubmit={this.handleSubmit}>
               <h4 className="form-group row justify-content-center pb-2">Get in touch for a free quote or any questions!</h4>
               <div className="form-group row">
