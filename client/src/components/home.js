@@ -26,7 +26,9 @@ class Home extends Component {
           </div>
           <div className="col">
             <h4 className="pb-5 text-align-center">Trust is earned, get a free quote today and let us help you save</h4>
-            <div className="text-align-center"><a className="btn btn-danger shadow" href="/contact">Get a Quote</a></div>
+            <div className="text-align-center">
+              <a className="btn btn-danger shadow" href="/contact">Get a Quote</a>
+            </div>
           </div>
         </div>
 
