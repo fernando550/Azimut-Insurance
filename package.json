@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fernando550/azi-insurance.git"
+    "url": "git+https://github.com/fernando550/azi-insurance-1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fernando550/azi-insurance/issues"
+    "url": "https://github.com/fernando550/azi-insurance-1/issues"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
