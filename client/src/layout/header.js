@@ -10,8 +10,7 @@ class Header extends Component {
     const targetTab = "_blank";
 
     return (
-
-      <nav id="nav-header-1" className="navbar navbar-expand-lg navbar-light justify-content-between">
+      <nav id="nav-header-1" className="navbar navbar-expand-lg navbar-light">
 
         {/* BRAND LOGO */}
         <a className="navbar-brand" href="/">
@@ -60,7 +59,6 @@ class Header extends Component {
           </div>
         </div>
       </nav>
-
     );
   }
 }

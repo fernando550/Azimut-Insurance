@@ -3,7 +3,6 @@
   .image-container {
     max-height: 225px;
   }
-
   .navbar-collapse {
     border-top: lightgrey 1px solid;
   }
@@ -25,15 +24,12 @@
   .navbar-collapse .nav-item-class {
     border-right: lightgrey 1px solid;
   }
-
   #footer-page-location, #footer-page-contact {
     border-right: solid 1px white;
   }
-
   #nav-header-callus {
     margin-top: 30px;
   }
-
 }
 
 /* GENERAL */
@@ -76,12 +72,13 @@ nav {
 /* HEADER LAYOUT____________________________________________________________________________________________________________________________________________ */
 #azimut-logo {
   height: 100px;
+  margin-left: 25px;
 }
 
-/*#nav-header-layout {*/
-/*  height: 130px;*/
-/*  background-color: rgba(66, 85, 137, 0.6);*/
-/*}*/
+#nav-header-layout {
+  /*height: 130px;*/
+  background-color: rgba(66, 85, 137, 0.6);
+}
 
 #nav-header-callus {
   width: 300px;
@@ -93,6 +90,7 @@ nav {
 .navbar-collapse {
   margin-top: 15px;
   padding-top: 15px;
+  margin-right: 25px;
 }
 
 /* change navbar-toggler inside lines color (stroke) */
