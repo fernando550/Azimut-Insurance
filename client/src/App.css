@@ -1,3 +1,42 @@
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px){
+  .image-container {
+    max-height: 225px;
+  }
+
+  .navbar-collapse {
+    border-top: lightgrey 1px solid;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  #house-panel-1 > div:first-child > div:first-child {
+    border-right: solid 1px lightgrey;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .navbar-collapse {
+    border-top: lightgrey 1px solid;
+  }
+}
+
+@media only screen and (min-width: 991px){
+  .navbar-collapse .nav-item-class {
+    border-right: lightgrey 1px solid;
+  }
+
+  #footer-page-location, #footer-page-contact {
+    border-right: solid 1px white;
+  }
+
+  #nav-header-callus {
+    margin-top: 30px;
+  }
+
+}
+
+/* GENERAL */
 h1 {
   color: white;
   margin-top: 100px;
@@ -8,12 +47,12 @@ h1 {
 }
 
 .panel {
-  height: 500px;
+  min-height: 500px;
   background-color: white;
 }
 
 .panel-insurance {
-  height: 600px;
+  min-height: 600px;
   background-color: white;
 }
 
@@ -25,19 +64,53 @@ h1 {
   box-shadow: 2px 2px 10px #777777;
 }
 
+.image-container {
+  min-height: 200px;
+  height: 399px;
+}
+
+nav {
+  background-color: rgba(66, 85, 137, 0.6);
+}
+
 /* HEADER LAYOUT____________________________________________________________________________________________________________________________________________ */
 #azimut-logo {
   height: 100px;
 }
 
-#nav-header-layout {
-  height: 130px;
-  background-color: rgba(66, 85, 137, 0.6);
-}
+/*#nav-header-layout {*/
+/*  height: 130px;*/
+/*  background-color: rgba(66, 85, 137, 0.6);*/
+/*}*/
 
-.nav-link {
+#nav-header-callus {
+  width: 300px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: white;
 }
+
+.navbar-collapse {
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-light span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light button.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+/*.nav-link {*/
+/*  color: white;*/
+/*}*/
 
 #nav-header-links a:hover {
   color: red;
@@ -57,11 +130,6 @@ h1 {
 }
 
 /* HOME PAGE________________________________________________________________________________________________________________________________________________ */
-/*.repeating-linear {*/
-/*  color: pink;*/
-/*  border: 10px solid pink;*/
-/*  border-image: repeating-linear-gradient(45deg, red, white, red);*/
-/*}*/
 
 #h-panel-1, #h-panel-2 {
   border-top: 5px solid red;
@@ -158,7 +226,7 @@ h1 {
 
 /* FOOTER LAYOUT____________________________________________________________________________________________________________________________________________ */
 #footer-layout {
-  height: 275px;
+  min-height: 275px;
   background-color: lightgrey;
 }
 

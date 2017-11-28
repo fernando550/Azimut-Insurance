@@ -10,7 +10,7 @@ class Footer extends Component {
 
     return (
       <div id="footer-layout" className="row p-5">
-        <div id="footer-page-location" className="col text-center border border-top-0 border-bottom-0 border-left-0">
+        <div id="footer-page-location" className="col-lg-4 text-center pb-5">
           <h4 className="pb-3">LOCATION</h4>
           <div><span className="pr-2"><i className="fa fa-lg fa-map-marker"></i></span>Main Office</div>
           <div className="pb-3">
@@ -24,7 +24,7 @@ class Footer extends Component {
           </div>
         </div>
 
-        <div id="footer-page-contact" className="col text-center border border-top-0 border-bottom-0 border-left-0">
+        <div id="footer-page-contact" className="col-lg-4 text-center pb-5">
           <h4 className="pb-3">CONTACT</h4>
           <div><span className="pr-2"><i className="fa fa-envelope"></i></span>Email</div>
           <div className="pb-3">
@@ -38,7 +38,7 @@ class Footer extends Component {
 
 
 
-        <div id="footer-page-social-media" className="col text-center">
+        <div id="footer-page-social-media" className="col-lg-4 text-center">
           <h4 className="pb-3">SOCIAL MEDIA</h4>
           <div className="pb-3">
             Connect With Us!

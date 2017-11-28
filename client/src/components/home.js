@@ -21,10 +21,10 @@ class Home extends Component {
 
         {/* PANEL 1 */}
         <div id="h-panel-1" className="panel p-5 row align-items-center">
-          <div  className="col h-100 w-100">
+          <div className="col-sm-6 image-container">
             <div id="h-panel-1-img"></div>
           </div>
-          <div className="col">
+          <div className="col-sm-6">
             <h4 className="pb-5 text-align-center">Trust is earned, get a free quote today and let us help you save</h4>
             <div className="text-align-center">
               <a className="btn btn-danger shadow" href="/contact">Get a Quote</a>
@@ -32,18 +32,19 @@ class Home extends Component {
           </div>
         </div>
 
+
         {/* HEADER-2 */}
         <h1 id="h-header-2" className="container py-3">Our Trusted Carriers</h1>
 
         {/* PANEL 2 */}
         <div id="h-panel-2" className="panel p-5 row align-items-center">
-          <div className="col">
+          <div className="col-sm-6">
             <h4 className="pb-5 text-align-center">With over 20+ carriers, we are confident you will find what you need.</h4>
             <h6 className="text-align-center">Come to Azimut with all your worries, and leave with none.</h6>
           </div>
 
           {/* CAROUSEL */}
-          <div className="col align-self-center">
+          <div className="col-sm-6">
             <div id="insurance-carousel" className="carousel slide" data-ride="carousel">
               <div className="carousel-inner" role="listbox">
                 <div className="carousel-item active">

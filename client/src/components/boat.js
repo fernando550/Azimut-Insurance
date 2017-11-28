@@ -11,14 +11,14 @@ class Boat extends Component {
         {/* PANEL-1 */}
         <div id="boat-panel-1" className="panel-insurance p-5">
           <div className="row">
-            <div className="col">
+            <div className="col-sm-12">
               <h4 className="pb-3">Have us protect your boat</h4>
               <h6>Focus on spending a great day with your friends and family</h6>
             </div>
           </div>
 
-          <div className="row align-items-start pt-5" style={{height: '400px'}}>
-            <div className="col">
+          <div className="row align-items-start pt-5">
+            <div className="col-sm-6">
               Facts you need to know about boat insurance:
               <ul style={{marginLeft: '-22px', marginTop: '10px'}}>
                 <li className="py-2">Boat policy covers you for liability if someone is injured on your watercraft</li>
@@ -26,7 +26,7 @@ class Boat extends Component {
               </ul>
             </div>
 
-            <div className="col h-100 w-100">
+            <div className="col-sm-6 image-container">
               <div id="boat-panel-1-img"></div>
             </div>
           </div>

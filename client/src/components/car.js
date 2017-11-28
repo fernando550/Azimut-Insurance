@@ -11,14 +11,14 @@ class Car extends Component {
         {/* PANEL-1 */}
         <div id="car-panel-1" className="panel-insurance p-5">
           <div className="row align-items-center">
-            <div className="col">
+            <div className="col-sm-12">
               <h4 className="pb-3">Get insured by a team that loves your car just as much as you do</h4>
               <h6>Cars aren't just parts. Azimut started because our love for cars extends to our community.</h6>
             </div>
           </div>
 
-          <div className="row align-items-start pt-5" style={{height: '400px'}}>
-            <div className="col">
+          <div className="row align-items-start pt-5">
+            <div className="col-sm-6">
               Facts you need to know about car insurance:
               <ul style={{marginLeft: '-22px', marginTop: '10px'}}>
                 <li className="py-2">Driver must have a personal injury protection of at least $10,000</li>
@@ -27,7 +27,7 @@ class Car extends Component {
               </ul>
             </div>
 
-            <div className="col h-100 w-100">
+            <div className="col-sm-6 image-container">
               <div id="car-panel-1-img"></div>
             </div>
           </div>

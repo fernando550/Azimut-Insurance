@@ -10,20 +10,20 @@ class House extends Component {
 
         {/* PANEL-1 */}
         <div id="house-panel-1" className="panel-insurance p-5" >
-          <div className="row px-5 justify-content-center">
-            <div className="col px-5 text-align-center border border-top-0 border-bottom-0 border-left-0">
+          <div className="row justify-content-center">
+            <div className="col-sm-6 px-5 pb-5 text-align-center">
               <h4 className="pb-3">Protect your home</h4>
               <h6>A house is usually a person's most expensive asset. All the more reason to insure it. We can help you find a policy that will protect your house and it's belongings. Rent or buy, we have the coverage necessary for you to feel safe at home.</h6>
             </div>
 
-            <div className="col px-5 text-align-center">
+            <div className="col-sm-6 px-5 text-align-center">
               <h4 className="pb-3">Dont own a home?</h4>
               <h6>Applying for renter's insurance will cover you and your belongings for loss or damage. Although the landlord own's the property, protecting your assets is up to you.</h6>
             </div>
           </div>
 
-          <div className="row px-5 align-items-start pt-5" style={{height: '400px'}}>
-            <div className="col text-align-center">
+          <div className="row align-items-start pt-5">
+            <div className="col-sm-6 text-align-center">
              <h4 className="pb-3">Different policies:</h4>
               <ul style={{marginLeft: '-22px'}}>
                 <li className="py-2">HO-2: A broad policy that will cover your house and contents against 16 disasters.</li>
@@ -33,7 +33,7 @@ class House extends Component {
               </ul>
             </div>
 
-            <div className="col h-100 w-100">
+            <div className="col-sm-6 image-container">
               <div id="house-panel-1-img"></div>
             </div>
           </div>

@@ -44,10 +44,10 @@ class Contact extends Component {
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
           {!this.state.confirmation && !this.state.error &&
-            <form id="contact-form" className="mx-auto w-50" onSubmit={this.handleSubmit}>
+            <form id="contact-form" className="mx-auto" onSubmit={this.handleSubmit}>
               <h4 className="form-group row justify-content-center pb-2">Get in touch for a free quote or any questions!</h4>
-              <div className="form-group row">
-                <div className="col">
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-6">
                   <input
                       className="form-control shadow"
                       type="text"
@@ -58,8 +58,8 @@ class Contact extends Component {
                       onChange={this.onInputChange}/>
                 </div>
               </div>
-              <div className="form-group row">
-                <div className="col">
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-6">
                   <input
                     className="form-control shadow"
                     type="email"
@@ -70,8 +70,8 @@ class Contact extends Component {
                     onChange={this.onInputChange}/>
                 </div>
               </div>
-              <div className="form-group row">
-                <div className="col">
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-6">
                   <input
                     className="form-control shadow"
                     type="tel"
@@ -82,8 +82,8 @@ class Contact extends Component {
                     onChange={this.onInputChange}/>
                 </div>
               </div>
-              <div className="form-group row">
-                <div className="col">
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-6">
                   <textarea
                     className="form-control shadow"
                     type="text"
