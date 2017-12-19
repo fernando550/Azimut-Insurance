@@ -1,11 +1,11 @@
 {
-  "name": "azimutSERV",
+  "name": "AzimutServer",
   "version": "1.1.0",
   "description": "server-file",
   "main": "server.js",
   "engines": {
     "node": "7.10.1",
-    "npm": "5.5.1"
+    "npm": "5.6.0"
   },
   "scripts": {
     "start": "babel-node server.js",
