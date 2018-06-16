@@ -12,6 +12,7 @@ import Location from "./components/location";
 import Car from "./components/car";
 import Boat from "./components/boat";
 import House from "./components/house";
+import Business from "./components/business";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/car" component={Car} />
             <Route path="/boat" component={Boat} />
             <Route path="/house" component={House} />
+            <Route path="/business" component={Business} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/location" component={Location} />

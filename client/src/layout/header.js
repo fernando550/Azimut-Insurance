@@ -40,6 +40,7 @@ class Header extends Component {
                 <Link className="dropdown-item" to="/car"><span style={{marginRight: '10px'}}><i className="fa fa-car"></i></span>Car</Link>
                 <Link className="dropdown-item" to="/boat"><span style={{marginRight: '10px'}}><i className="fa fa-ship"></i></span>Boat</Link>
                 <Link className="dropdown-item" to="/house"><span style={{marginRight: '9px'}}><i className="fa fa-lg fa-home"></i></span>House</Link>
+                <Link className="dropdown-item" to="/business"><span style={{marginRight: '10px', paddingLeft: '5px'}}><i className="fa fa-building"></i></span>Business</Link>
               </div>
             </div>
 
