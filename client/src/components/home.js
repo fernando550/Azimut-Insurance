@@ -17,7 +17,21 @@ class Home extends Component {
       <div id="home-component">
 
         {/* HEADER-1 */}
-        <h1 id="h-header-1" className="container py-3">Welcome to Azimut</h1>
+        <h1 id="h-header-1" className="container py-3">Welcome to Azimut Insurance Consultants</h1>
+
+        <div id="h-panel-1" className="panel p-5 row align-items-center">
+          <div className="col-sm-6 align-items-center mx-auto">
+            <h2 className="pb-5 text-align-center">Why Choose Us?</h2>
+            <div className="text-align-center">
+              <p style={{fontSize:'20px'}}>We are an independent insurance brokerage that aims to add value to your lifestyle.
+              We only partner with leading insurance companies to ensure you the best product for your risks and needs.
+              We are one of the few agencies in Florida licensed in Excess and Surplus lines of insurance making
+              our brokerage unique and exceptional for all your insurance needs. </p>
+            </div>
+          </div>
+        </div>
+
+        <h1 id="h-header-2" className="container py-3">Get a Quote</h1>
 
         {/* PANEL 1 */}
         <div id="h-panel-1" className="panel p-5 row align-items-center">
@@ -27,7 +41,7 @@ class Home extends Component {
           <div className="col-sm-6">
             <h4 className="pb-5 text-align-center">Trust is earned, get a free quote today and let us help you save</h4>
             <div className="text-align-center">
-              <a className="btn btn-danger shadow" href="/contact">Get a Quote</a>
+              <a className="btn btn-danger shadow" href="/contact" style={{width: '200px'}}>GET A QUOTE</a>
             </div>
           </div>
         </div>
@@ -89,6 +103,8 @@ class Home extends Component {
             </div>
           </div>
         </div>
+
+        <h1 id="h-header-2" className="container py-5"></h1>
 
       </div>
     );

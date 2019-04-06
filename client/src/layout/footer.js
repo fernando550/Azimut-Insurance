@@ -28,7 +28,7 @@ class Footer extends Component {
           <h4 className="pb-3">CONTACT</h4>
           <div><span className="pr-2"><i className="fa fa-envelope"></i></span>Email</div>
           <div className="pb-3">
-            EduardoG@azimutinsurance.com
+            info@azimutinsurance.com
           </div>
           <div><span className="pr-2"><i className="fa fa-phone"></i></span>Phone</div>
           <div>

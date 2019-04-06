@@ -13,6 +13,8 @@ import Car from "./components/car";
 import Boat from "./components/boat";
 import House from "./components/house";
 import Business from "./components/business";
+import BoatApp from "./components/boatApp";
+import HomeApp from "./components/homeApp";
 
 class App extends Component {
   render() {
@@ -28,6 +30,8 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/location" component={Location} />
+            <Route path="/boatapp" component={BoatApp} />
+            <Route path="/homeapp" component={HomeApp} />
           <Footer/>
         </div>
       </BrowserRouter>

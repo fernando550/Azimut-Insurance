@@ -31,6 +31,8 @@ class House extends Component {
                 <li className="py-2">HO-6: A policy that covers your condominium. This policy provides coverage for liability, personal property, and structural parts of the building.</li>
                 <li className="py-2">HO-8: This policy is designed for older homes whose replacement cost exceeds the property's value.</li>
               </ul>
+              <br/>
+              <p>Click the link for a quote: <a href="/homeApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Home Insurance Application</a></p>
             </div>
 
             <div className="col-sm-6 image-container">

@@ -24,6 +24,9 @@ class Boat extends Component {
                 <li className="py-2">Boat policy covers you for liability if someone is injured on your watercraft</li>
                 <li className="py-2">Your boat policy gives you the choice between cash value (agreed value) or replacement cost in case of a total loss</li>
               </ul>
+              <br/>
+              <p>Click the link for a quote: <a href="/boatApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Boat Insurance Application</a></p>
+
             </div>
 
             <div className="col-sm-6 image-container">
