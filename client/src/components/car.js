@@ -25,6 +25,7 @@ class Car extends Component {
                 <li className="py-2">Drivers must have Bodily injury limits of at least $10,000 per person and $20,000 per accident</li>
                 <li className="py-2">Drivers must have a property damage liability of atleast $10,000</li>
               </ul>
+              <p>Click the link for a quote: <a href="/carApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Car Insurance Application</a></p>
             </div>
 
             <div className="col-sm-6 image-container">

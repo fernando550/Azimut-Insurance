@@ -33,12 +33,12 @@ app.post('/sendMail', async (req, res) => {
 });
 
 app.post('/boatApp', async (req, res) => {
-  console.log('client request: ', req.body);
+  console.log('boat app request: ', req.body);
   const msg = {
     to: 'EduardoG@azimutinsurance.com',
     from: req.body.userEmail,
     subject: req.body.userName,
-    text: req.body.Telephone + req.body
+    text: req.body.userPhone + req.body
   };
 
   try {
@@ -54,13 +54,57 @@ app.post('/boatApp', async (req, res) => {
 	}
 });
 
-app.post('/homeApp', async (req, res) => {
-  console.log('client request: ', req.body);
+app.post('/houseApp', async (req, res) => {
+  console.log('home app request: ', req.body);
   const msg = {
     to: 'EduardoG@azimutinsurance.com',
     from: req.body.userEmail,
     subject: req.body.userName,
-    text: req.body.Telephone + req.body
+    text: req.body.userPhone + req.body
+  };
+
+  try {
+    let confirmation = await sgMail.send(msg);
+
+    if (confirmation) {
+      res.send({confirmation: true, error: false});
+    }
+  }
+  catch (e) {
+		console.log(e);
+		res.send({confirmation: false, error: true});
+	}
+});
+
+app.post('/carApp', async (req, res) => {
+  console.log('home app request: ', req.body);
+  const msg = {
+    to: 'EduardoG@azimutinsurance.com',
+    from: req.body.userEmail,
+    subject: req.body.userName1,
+    text: req.body.userPhone + req.body
+  };
+
+  try {
+    let confirmation = await sgMail.send(msg);
+
+    if (confirmation) {
+      res.send({confirmation: true, error: false});
+    }
+  }
+  catch (e) {
+		console.log(e);
+		res.send({confirmation: false, error: true});
+	}
+});
+
+app.post('/busApp', async (req, res) => {
+  console.log('home app request: ', req.body);
+  const msg = {
+    to: 'EduardoG@azimutinsurance.com',
+    from: req.body.userEmail,
+    subject: req.body.CompanyName,
+    text: req.body.userPhone + req.body
   };
 
   try {

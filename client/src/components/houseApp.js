@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-class HomeApp extends Component {
+class HouseApp extends Component {
 
   state = {
 	  userName: '',
@@ -28,7 +28,7 @@ class HomeApp extends Component {
   handleSubmit = async (e) => {
   	e.preventDefault();
   	try {
-  		let res = await axios.post('/homeApp', this.state);
+  		let res = await axios.post('/houseApp', this.state);
 
   		let data = res.data;
   		this.setState({confirmation: data.confirmation, error: data.error});
@@ -117,7 +117,7 @@ class HomeApp extends Component {
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="userDOB"
+                      name="userAddress"
                       placeholder="Address (Street, City, State, Zipcode)"
                       value={this.state.userAddress}
                       id="name-input"
@@ -277,8 +277,8 @@ class HomeApp extends Component {
                   <textarea
                       className="form-control shadow"
                       type="text"
-                      name="insName"
-                      placeholder="Current/Prior Insurance Provider"
+                      name="insLoss"
+                      placeholder="Message"
                       value={this.state.insLoss }
                       id="name-input"
                       onChange={this.onInputChange}>
@@ -316,4 +316,4 @@ class HomeApp extends Component {
   }
 }
 
-export default HomeApp;
+export default HouseApp;

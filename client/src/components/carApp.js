@@ -1,25 +1,25 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-class BoatApp extends Component {
+class CarApp extends Component {
 
   state = {
-	  userName: '',
-	  userEmail: '',
+	  userName1: '',
+	  userName2: '',
+    userEmail: '',
 	  userPhone: '',
-    userDOB: '',
+    userDOB1: '',
+    userDOB2: '',
     userAddress: '',
-    vesselName: '',
-    vesselMake: '', // make/model
-    vesselLength: '',
-    vesselYear: '',
-    vesselEngine: '',
-    vesselHP: '',
-    opCaptain: '', //captain yes/no
-    opExp: '', //years of experience
-    vessel1: '',
-    vessel2: '',
-    vessel3: '',
+    userExp: '',
+    userMarried: '',
+    userPriorVehicle: '',
+    userLicense1:'',
+    userLicense2:'',
+    VIN1: '',
+    VIN2: '', // make/model
+    Vehicle1: '',
+    Vehicle2: '',
 	  confirmation: false,
 	  error: false
 	};
@@ -27,7 +27,7 @@ class BoatApp extends Component {
   handleSubmit = async (e) => {
   	e.preventDefault();
   	try {
-  		let res = await axios.post('/boatApp', this.state);
+  		let res = await axios.post('/carApp', this.state);
 
   		let data = res.data;
   		this.setState({confirmation: data.confirmation, error: data.error});
@@ -51,7 +51,7 @@ class BoatApp extends Component {
       <div id="contact-component">
 
         {/* HEADER-1 */}
-        <h1 className="container py-3">Boat Insurance Application</h1>
+        <h1 className="container py-3">Car Insurance Application</h1>
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
@@ -63,13 +63,67 @@ class BoatApp extends Component {
               </div>
 
               <div className="form-group row justify-content-center">
-                <div className="col-sm-6">
+                <div className="col-sm-3">
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="userName"
-                      placeholder="Full Name"
-                      value={this.state.userName}
+                      name="userName1"
+                      placeholder="Name of Insured"
+                      value={this.state.userName1}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userDOB1"
+                      placeholder="Date of Birth (mm/dd/yyyy)"
+                      value={this.state.userDOB1}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+              </div>
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userName2"
+                      placeholder="Second Driver"
+                      value={this.state.userName2}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userDOB2"
+                      placeholder="Date of Birth (mm/dd/yyyy)"
+                      value={this.state.userDOB2}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+              </div>
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userLicense1"
+                      placeholder="First Driver's License"
+                      value={this.state.userLicense1}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userLicense2"
+                      placeholder="Second Driver's License"
+                      value={this.state.userLicense2}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -98,14 +152,38 @@ class BoatApp extends Component {
                     onChange={this.onInputChange}/>
                 </div>
               </div>
+
               <div className="form-group row justify-content-center">
-                <div className="col-sm-6">
+              <div className="col-sm-6">
+                <input
+                    className="form-control shadow"
+                    type="text"
+                    name="userAddress"
+                    placeholder="Home Address for Cars (Street, City, State, Zipcode)"
+                    value={this.state.userAddress}
+                    id="name-input"
+                    onChange={this.onInputChange}/>
+              </div>
+              </div>
+
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-3">
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="userDOB"
-                      placeholder="Date of Birth (mm/dd/yyyy)"
-                      value={this.state.userDOB}
+                      name="userExp"
+                      placeholder="Own/Rent Years"
+                      value={this.state.userExp}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userMarried"
+                      placeholder="Married/Single"
+                      value={this.state.userMarried}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -116,9 +194,9 @@ class BoatApp extends Component {
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="userAddress"
-                      placeholder="Address (Street, City, State, Zipcode)"
-                      value={this.state.userAddress}
+                      name="userPriorVehicle"
+                      placeholder="Prior Vehicle"
+                      value={this.state.userPriorVehicle}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -126,30 +204,7 @@ class BoatApp extends Component {
 
               <br/>
               <div className="form-group row justify-content-center">
-                <h4>Vessel Information</h4>
-              </div>
-              <div className="form-group row justify-content-center">
-                <div className="col-sm-3">
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="vesselName"
-                      placeholder="Vessel Name"
-                      value={this.state.vesselName}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-                </div>
-
-                <div className="col-sm-3">
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="vesselLength"
-                      placeholder="Vessel Length"
-                      value={this.state.vesselLength}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-                </div>
+                <h4>Vehicle Information</h4>
               </div>
 
               <div className="form-group row justify-content-center">
@@ -157,9 +212,9 @@ class BoatApp extends Component {
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="vesselMake"
-                      placeholder="Vessel Make/Model"
-                      value={this.state.vesselMake}
+                      name="VIN1"
+                      placeholder="VIN 1"
+                      value={this.state.VIN1}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -168,9 +223,9 @@ class BoatApp extends Component {
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="vesselYear"
-                      placeholder="Vessel Year"
-                      value={this.state.vesselYear}
+                      name="VIN2"
+                      placeholder="VIN 2"
+                      value={this.state.VIN2}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -178,103 +233,32 @@ class BoatApp extends Component {
 
               <div className="form-group row justify-content-center">
 
-                <div className="col-sm-3">
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="vesselEngine"
-                      placeholder="Vessel Engine"
-                      value={this.state.vesselEngine}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-                </div>
-
-                <div className="col-sm-3">
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="vesselHP"
-                      placeholder="Vessel HorsePower"
-                      value={this.state.vesselHP}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-                </div>
-              </div>
-
-              <div className="form-group row justify-content-center">
-
-              <div className="col-sm-3">
-              <div >
-                <input
-                    className="form-control shadow"
-                    type="text"
-                    name="opCaptain"
-                    placeholder="Captain? (Y/N)"
-                    value={this.state.opCaptain}
-                    id="name-input"
-                    onChange={this.onInputChange}/>
-
-              </div>
-              </div>
-
-                <div className="col-sm-3">
-                <div >
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="opExp"
-                      placeholder="Years of Exp (Captain/Owner)"
-                      value={this.state.opExp}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-
-                </div>
-                </div>
-              </div>
-
-              <div className="form-group row justify-content-center">
-                <br/>
-                <div className="col-sm-6">
-                  Last three vessels operated (Make, Length, Year)
-                </div>
-              </div>
-
-              <div className="form-group row justify-content-center">
                 <div className="col-sm-6">
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="vessel1"
-                      placeholder="Vessel 1"
-                      value={this.state.vessel1}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-                      </div>
-                      </div>
-              <div className="form-group row justify-content-center">
-                <div className="col-sm-6">
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="vessel2"
-                      placeholder="Vessel 2"
-                      value={this.state.vessel2}
-                      id="name-input"
-                      onChange={this.onInputChange}/>
-                      </div>
-                      </div>
-              <div className="form-group row justify-content-center">
-                <div className="col-sm-6">
-                  <input
-                      className="form-control shadow"
-                      type="text"
-                      name="vessel3"
-                      placeholder="Vessel 3"
-                      value={this.state.vessel3}
+                      name="Vehicle1"
+                      placeholder="Vehicle 1 (Year/Make/Model)"
+                      value={this.state.Vehicle1}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
               </div>
+
+              <div className="form-group row justify-content-center">
+
+                <div className="col-sm-6">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="Vehicle2"
+                      placeholder="Vehicle 2 (Year/Make/Model)"
+                      value={this.state.Vehicle2}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+              </div>
+
 
               <br/>
 
@@ -306,4 +290,4 @@ class BoatApp extends Component {
   }
 }
 
-export default BoatApp;
+export default CarApp;

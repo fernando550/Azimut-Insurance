@@ -5,7 +5,7 @@ import "./App.css";
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 
-import Home from "./components/home";
+import Home from "./components/landingPage";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Location from "./components/location";
@@ -14,7 +14,9 @@ import Boat from "./components/boat";
 import House from "./components/house";
 import Business from "./components/business";
 import BoatApp from "./components/boatApp";
-import HomeApp from "./components/homeApp";
+import HouseApp from "./components/houseApp";
+import CarApp from "./components/carApp";
+import BusinessApp from "./components/businessApp";
 
 class App extends Component {
   render() {
@@ -31,7 +33,9 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route path="/location" component={Location} />
             <Route path="/boatapp" component={BoatApp} />
-            <Route path="/homeapp" component={HomeApp} />
+            <Route path="/houseapp" component={HouseApp} />
+            <Route path="/carapp" component={CarApp} />
+            <Route path="/businessapp" component={BusinessApp} />
           <Footer/>
         </div>
       </BrowserRouter>
