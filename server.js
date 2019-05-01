@@ -43,24 +43,24 @@ app.post('/boatApp', async (req, res) => {
     from: req.body.userEmail,
     subject: `Marine Insurance: ${req.body.userName}`,
     text:
-    `Marine Insurance... \n
-	  Phone: ${req.userPhone} \n
-    Date of Birth: ${req.userDOB} \n
-    Address: ${req.userAddress} \n
-    Vessel Name: ${req.vesselName} \n
-    Vessel Make: ${req.vesselMake} \n
-    Vessel Length: ${req.vesselLength} \n
-    Vessel Year: ${req.vesselYear} \n
-    Vessel Engine: ${req.vesselEngine} \n
-    Vessel HP: ${req.vesselHP} \n
-    Operating Captain: ${req.opCaptain} \n
-    Operator's Experience: ${req.opExp} \n
-    Vessel Prior/Current Insurance: ${req.vesselPriorIns} \n
-    Vessel Prior/Current Insurance Expiration: ${req.vesselPriorExp} \n
-    Previously driven vessels: \n
-    ${req.vessel1} \n
-    ${req.vessel2} \n
-    ${req.vessel3} \n
+    `Marine Insurance...
+	  Phone: ${req.userPhone}
+    Date of Birth: ${req.userDOB}
+    Address: ${req.userAddress}
+    Vessel Name: ${req.vesselName}
+    Vessel Make: ${req.vesselMake}
+    Vessel Length: ${req.vesselLength}
+    Vessel Year: ${req.vesselYear}
+    Vessel Engine: ${req.vesselEngine}
+    Vessel HP: ${req.vesselHP}
+    Operating Captain: ${req.opCaptain}
+    Operator's Experience: ${req.opExp}
+    Vessel Prior/Current Insurance: ${req.vesselPriorIns}
+    Vessel Prior/Current Insurance Expiration: ${req.vesselPriorExp}
+    Previously driven vessels:
+    ${req.vessel1}
+    ${req.vessel2}
+    ${req.vessel3}
     `
   };
 
