@@ -46,7 +46,7 @@ class Header extends Component {
 
             <Link style={{width: '120px'}} className="nav-link nav-item-class px-4" to="/about">About Us</Link>
             <Link style={{width: '140px'}} className="nav-link nav-item-class px-4" to="/contact">Contact Us</Link>
-            <Link style={{width: '120px'}} className="nav-link nav-item-class px-4" to="/quotes">Quotes</Link>
+            <Link style={{width: '160px'}} className="nav-link nav-item-class px-4" to="/quotes">Get A Quote</Link>
 
             {/* FACEBOOK LINK*/}
             <a style={{width: '50px'}} className="nav-link px-4" href={fbLink} target={targetTab} rel="noopener noreferrer">
