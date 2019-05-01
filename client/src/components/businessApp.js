@@ -10,8 +10,9 @@ class BusinessApp extends Component {
     companySize: '',
 	  companyYear: '',
     companyEmployees: '',
-    companyPayroll: '',
     companySales: '',
+    companyPriorIns: '',
+    companyPriorExp: '',
     companyOperation: '',
 	  confirmation: false,
 	  error: false
@@ -44,7 +45,7 @@ class BusinessApp extends Component {
       <div id="contact-component">
 
         {/* HEADER-1 */}
-        <h1 className="container py-3">Car Insurance Application</h1>
+        <h1 className="container py-3">Business Insurance Application</h1>
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
@@ -60,9 +61,9 @@ class BusinessApp extends Component {
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="userEmail"
-                      placeholder="Contact Email"
-                      value={this.state.userEmail}
+                      name="userName"
+                      placeholder="Name"
+                      value={this.state.userName}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -73,6 +74,19 @@ class BusinessApp extends Component {
                       name="userPhone"
                       placeholder="Contact Number"
                       value={this.state.userPhone}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+              </div>
+
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-6">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userEmail"
+                      placeholder="Contact Email"
+                      value={this.state.userEmail}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>
@@ -140,10 +154,32 @@ class BusinessApp extends Component {
                     className="form-control shadow"
                     type="tel"
                     name="companySales"
-                    placeholder="Annual Sales"
+                    placeholder="Annual Sales Revenue"
                     value={this.state.companySales}
                     id="tel-input"
                     onChange={this.onInputChange}/>
+                </div>
+              </div>
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="companyPriorIns"
+                      placeholder="Prior or Current Insurance"
+                      value={this.state.companyPriorIns}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="companyPriorExp"
+                      placeholder="Insurance Expiration (mm/dd/yyyy)"
+                      value={this.state.companyPriorExp}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
                 </div>
               </div>
               <div className="form-group row justify-content-center">

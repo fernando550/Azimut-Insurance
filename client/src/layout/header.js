@@ -37,25 +37,25 @@ class Header extends Component {
                 Insurance
               </a>
               <div className="dropdown-menu dropdown-menu-right bg-danger" aria-labelledby="ddlButton">
-                <Link className="dropdown-item" to="/car"><span style={{marginRight: '10px'}}><i className="fa fa-car"></i></span>Car</Link>
-                <Link className="dropdown-item" to="/boat"><span style={{marginRight: '10px'}}><i className="fa fa-ship"></i></span>Boat</Link>
-                <Link className="dropdown-item" to="/house"><span style={{marginRight: '9px'}}><i className="fa fa-lg fa-home"></i></span>House</Link>
+                <Link className="dropdown-item" to="/car"><span style={{marginRight: '10px'}}><i className="fa fa-car"></i></span>Auto</Link>
+                <Link className="dropdown-item" to="/boat"><span style={{marginRight: '10px'}}><i className="fa fa-ship"></i></span>Marine</Link>
+                <Link className="dropdown-item" to="/house"><span style={{marginRight: '9px'}}><i className="fa fa-lg fa-home"></i></span>Home</Link>
                 <Link className="dropdown-item" to="/business"><span style={{marginRight: '10px', paddingLeft: '5px'}}><i className="fa fa-building"></i></span>Business</Link>
               </div>
             </div>
 
             <Link style={{width: '120px'}} className="nav-link nav-item-class px-4" to="/about">About Us</Link>
             <Link style={{width: '140px'}} className="nav-link nav-item-class px-4" to="/contact">Contact Us</Link>
-            <Link style={{width: '120px'}} className="nav-link nav-item-class px-4" to="/location">Location</Link>
+            <Link style={{width: '120px'}} className="nav-link nav-item-class px-4" to="/quotes">Quotes</Link>
 
             {/* FACEBOOK LINK*/}
             <a style={{width: '50px'}} className="nav-link px-4" href={fbLink} target={targetTab} rel="noopener noreferrer">
-              <span><i className="fa fa-lg fa-facebook-square"></i></span>
+              <span><i className="fab fa-lg fa-facebook-square"></i></span>
             </a>
 
             {/* INSTAGRAM LINK*/}
             <a style={{width: '50px'}} className="nav-link px-4" href={instaLink} target={targetTab} rel="noopener noreferrer">
-              <span><i className="fa fa-lg fa-instagram"></i></span>
+              <span><i className="fab fa-lg fa-instagram"></i></span>
             </a>
           </div>
         </div>

@@ -13,7 +13,8 @@ class CarApp extends Component {
     userAddress: '',
     userExp: '',
     userMarried: '',
-    userPriorVehicle: '',
+    userPriorIns: '',
+    userPriorExp: '',
     userLicense1:'',
     userLicense2:'',
     VIN1: '',
@@ -51,7 +52,7 @@ class CarApp extends Component {
       <div id="contact-component">
 
         {/* HEADER-1 */}
-        <h1 className="container py-3">Car Insurance Application</h1>
+        <h1 className="container py-3">Auto Insurance Application</h1>
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
@@ -190,13 +191,23 @@ class CarApp extends Component {
               </div>
 
               <div className="form-group row justify-content-center">
-                <div className="col-sm-6">
+                <div className="col-sm-3">
                   <input
                       className="form-control shadow"
                       type="text"
-                      name="userPriorVehicle"
-                      placeholder="Prior Vehicle"
-                      value={this.state.userPriorVehicle}
+                      name="userPriorIns"
+                      placeholder="Prior or Current Insurance"
+                      value={this.state.userPriorIns}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="userPriorExp"
+                      placeholder="Insurance Expiration (mm/dd/yyyy)"
+                      value={this.state.userPriorExp}
                       id="name-input"
                       onChange={this.onInputChange}/>
                 </div>

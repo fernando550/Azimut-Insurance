@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Location from './location1';
 
 class Contact extends Component {
 
@@ -42,10 +43,12 @@ class Contact extends Component {
         <h1 className="container py-3">Contact Us</h1>
 
         {/* PANEL-1 */}
-        <div id="c-panel-1" className="panel">
+        <div id="c-panel-1" className="panel" >
+          <Location/>
+
           {!this.state.confirmation && !this.state.error &&
             <form id="contact-form" className="mx-auto" onSubmit={this.handleSubmit}>
-              <h4 className="form-group row justify-content-center pb-2">Get in touch for a free quote or any questions!</h4>
+              <h4 className="form-group row justify-content-center pb-2">For any general inquiries, submit the form below:</h4>
               <div className="form-group row justify-content-center">
                 <div className="col-sm-6">
                   <input

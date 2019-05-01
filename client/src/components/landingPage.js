@@ -41,7 +41,7 @@ class Home extends Component {
           <div className="col-sm-6">
             <h4 className="pb-5 text-align-center">Trust is earned, get a free quote today and let us help you save</h4>
             <div className="text-align-center">
-              <a className="btn btn-danger shadow" href="/contact" style={{width: '200px'}}>GET A QUOTE</a>
+              <a className="btn btn-danger shadow" href="/quotes" style={{width: '200px'}}>GET A QUOTE</a>
             </div>
           </div>
         </div>

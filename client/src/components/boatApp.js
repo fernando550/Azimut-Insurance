@@ -17,6 +17,8 @@ class BoatApp extends Component {
     vesselHP: '',
     opCaptain: '', //captain yes/no
     opExp: '', //years of experience
+    vesselPriorIns: '',
+    vesselPriorExp: '',
     vessel1: '',
     vessel2: '',
     vessel3: '',
@@ -51,7 +53,7 @@ class BoatApp extends Component {
       <div id="contact-component">
 
         {/* HEADER-1 */}
-        <h1 className="container py-3">Boat Insurance Application</h1>
+        <h1 className="container py-3">Marine Insurance Application</h1>
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel">
@@ -229,6 +231,29 @@ class BoatApp extends Component {
                       onChange={this.onInputChange}/>
 
                 </div>
+                </div>
+              </div>
+
+              <div className="form-group row justify-content-center">
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="vesselPriorIns"
+                      placeholder="Prior or Current Insurance"
+                      value={this.state.vesselPriorIns}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
+                </div>
+                <div className="col-sm-3">
+                  <input
+                      className="form-control shadow"
+                      type="text"
+                      name="vesselPriorExp"
+                      placeholder="Insurance Expiration (mm/dd/yyyy)"
+                      value={this.state.vesselPriorExp}
+                      id="name-input"
+                      onChange={this.onInputChange}/>
                 </div>
               </div>
 

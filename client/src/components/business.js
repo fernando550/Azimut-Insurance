@@ -31,10 +31,12 @@ class Business extends Component {
                 <li className="py-2">In many states, workers compensation is required for employers to keep their employees safe.</li>
                 <li className="py-2">The insurance policy also covers costs for both parties, no matter who is at fault.</li>
               </ul>
+              <br/>
+              <p style={{fontSize: '20px'}}>Click the link for a quote: <a href="/businessapp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Business Insurance Application</a></p>
             </div>
 
             <div className="col-sm-6 image-container">
-              <div id="house-panel-1-img"></div>
+              <div id="bus-panel-1-img"></div>
             </div>
           </div>
         </div>

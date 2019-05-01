@@ -69,6 +69,29 @@ nav {
   background-color: rgba(66, 85, 137, 0.6);
 }
 
+.A {
+  display: none;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.btnQuote {
+  background-color: rgba(220,53,69,0.8);
+}
+.btnQuote:hover {
+  background-color: rgba(255,0,0,0.4);
+}
+
+.btnQuote:hover .A {
+  display:block;
+  opacity: 1;
+}
+
+.btnQuote:hover .B {
+  display: none;
+}
+
 /* HEADER LAYOUT____________________________________________________________________________________________________________________________________________ */
 #azimut-logo {
   height: 100px;
@@ -281,4 +304,13 @@ nav {
   /*https://static.pexels.com/photos/259646/pexels-photo-259646.jpeg*/
   /*https://static.pexels.com/photos/323781/pexels-photo-323781.jpeg*/
   /*https://static.pexels.com/photos/323774/pexels-photo-323774.jpeg*/
+}
+
+
+#bus-panel-1-img {
+  height: 100%;
+  background-image: url("http://www.gblimmigration.com/images/business.jpg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
 }

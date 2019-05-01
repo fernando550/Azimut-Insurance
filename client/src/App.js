@@ -17,6 +17,7 @@ import BoatApp from "./components/boatApp";
 import HouseApp from "./components/houseApp";
 import CarApp from "./components/carApp";
 import BusinessApp from "./components/businessApp";
+import Quotes from "./components/quotes";
 
 class App extends Component {
   render() {
@@ -32,10 +33,11 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/location" component={Location} />
-            <Route path="/boatapp" component={BoatApp} />
-            <Route path="/houseapp" component={HouseApp} />
-            <Route path="/carapp" component={CarApp} />
+            <Route path="/marineapp" component={BoatApp} />
+            <Route path="/homeapp" component={HouseApp} />
+            <Route path="/autoapp" component={CarApp} />
             <Route path="/businessapp" component={BusinessApp} />
+            <Route path='/quotes' component={Quotes} />
           <Footer/>
         </div>
       </BrowserRouter>

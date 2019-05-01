@@ -6,7 +6,7 @@ class House extends Component {
       <div id="house-component">
 
         {/* HEADER-1 */}
-        <h1 id="house-header-1" className="container py-3">House Insurance</h1>
+        <h1 id="house-header-1" className="container py-3">Home Insurance</h1>
 
         {/* PANEL-1 */}
         <div id="house-panel-1" className="panel-insurance p-5" >
@@ -32,7 +32,7 @@ class House extends Component {
                 <li className="py-2">HO-8: This policy is designed for older homes whose replacement cost exceeds the property's value.</li>
               </ul>
               <br/>
-              <p>Click the link for a quote: <a href="/houseApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Home Insurance Application</a></p>
+              <p style={{fontSize: '20px'}}>Click the link for a quote: <a href="/houseApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Home Insurance Application</a></p>
             </div>
 
             <div className="col-sm-6 image-container">
