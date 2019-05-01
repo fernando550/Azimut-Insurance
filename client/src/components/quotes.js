@@ -104,7 +104,7 @@ class Contact extends Component {
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                <a href="/carApp" target="_blank" >
+                <a href="/autoapp" target="_blank" >
                 <button type="submit" className="btn btn-danger shadow" style={{width: '200px', height: '60px'}}>
                   Auto Insurance <br/> Quote
                 </button> </a>
@@ -144,7 +144,7 @@ class Contact extends Component {
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                <a href="/businessapp" target="_blank" > 
+                <a href="/businessapp" target="_blank" >
                 <button type="submit" className="btn btn-danger shadow" style={{width: '200px', height: '60px'}}>
                   Business Insurance Quote
                 </button></a>
