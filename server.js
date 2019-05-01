@@ -18,7 +18,7 @@ app.post('/sendMail', async (req, res) => {
     subject: `General Inquiry: ${req.body.userName}`,
     text:
     `General Inquiry...
-    Phone: ${req.body.Telephone}
+    Phone: ${req.body.userPhone}
     Message: ${req.body.userMessage}
     `
   };
