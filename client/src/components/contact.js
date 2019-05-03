@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import Location from './location1';
+import Location from './location';
 
 class Contact extends Component {
 
@@ -40,7 +40,7 @@ class Contact extends Component {
       <div id="contact-component">
 
         {/* HEADER-1 */}
-        <h1 className="container py-3">Contact Us</h1>
+        <h1 className="container py-3 text-align-center">Contact Us</h1>
 
         {/* PANEL-1 */}
         <div id="c-panel-1" className="panel" >

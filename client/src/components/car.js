@@ -3,11 +3,17 @@ import React, {Component} from 'react';
 class Car extends Component {
   render() {
     return (
-      <div id="car-insurance-component">
+      <div id="car-insurance-component" style={
+        {backgroundImage: 'url("https://static.pexels.com/photos/164634/pexels-photo-164634.jpeg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'top',
+        marginTop: '-226px'
+      }
+      }>
 
         {/* HEADER-1 */}
-        <h1 id="car-header-1" className="container py-3">Auto Insurance</h1>
-
+        <div id="car-header-1" className="container" style={{height: '500px'}}></div>
+        <h1 className="container py-3">Auto Insurance</h1>
         {/* PANEL-1 */}
         <div id="car-panel-1" className="panel-insurance p-5">
           <div className="row align-items-center">
@@ -26,10 +32,7 @@ class Car extends Component {
                 <li className="py-2">Drivers must have a property damage liability of atleast $10,000</li>
               </ul>
               <p style={{fontSize: '20px'}}>Click the link for a quote: <a href="/autoapp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Auto Insurance Application</a></p>
-            </div>
 
-            <div className="col-sm-6 image-container">
-              <div id="car-panel-1-img"></div>
             </div>
           </div>
         </div>

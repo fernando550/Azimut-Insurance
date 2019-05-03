@@ -3,10 +3,16 @@ import React, {Component} from 'react';
 class House extends Component {
   render() {
     return (
-      <div id="house-component">
+      <div id="house-component" style={
+        {backgroundImage: 'url("https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg")',
+        backgroundSize: 'contain',
+        backgroundPosition: 'top',
+        marginTop: '-226px'
+      }}>
 
         {/* HEADER-1 */}
-        <h1 id="house-header-1" className="container py-3">Home Insurance</h1>
+        <div id="boat-header-1" className="container" style={{height: '500px'}}></div>
+        <h1 className="container py-3">Home Insurance</h1>
 
         {/* PANEL-1 */}
         <div id="house-panel-1" className="panel-insurance p-5" >
@@ -22,8 +28,8 @@ class House extends Component {
             </div>
           </div>
 
-          <div className="row align-items-start pt-5">
-            <div className="col-sm-6 text-align-center">
+          <div className="row align-items-start pt-5" style={{margin: '0 25%'}}>
+            <div className="col-sm-12 text-align-center">
              <h4 className="pb-3">Different policies:</h4>
               <ul style={{marginLeft: '-22px'}}>
                 <li className="py-2">HO-2: A broad policy that will cover your house and contents against 16 disasters.</li>
@@ -33,10 +39,6 @@ class House extends Component {
               </ul>
               <br/>
               <p style={{fontSize: '20px'}}>Click the link for a quote: <a href="/houseApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Home Insurance Application</a></p>
-            </div>
-
-            <div className="col-sm-6 image-container">
-              <div id="house-panel-1-img"></div>
             </div>
           </div>
         </div>

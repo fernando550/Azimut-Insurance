@@ -91,7 +91,6 @@ nav {
 .btnQuote:hover .B {
   display: none;
 }
-
 /* HEADER LAYOUT____________________________________________________________________________________________________________________________________________ */
 #azimut-logo {
   height: 100px;
@@ -191,7 +190,7 @@ nav {
 
 #a-panel-1-img {
   height: 100%;
-  background-image: url("https://static.pexels.com/photos/159864/waterfowl-mallard-young-young-duck-159864.jpeg");
+  background-image: url("./images/office1.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -204,7 +203,7 @@ nav {
 
 #a-panel-2-img {
   height: 100%;
-  background-image: url("https://static.pexels.com/photos/164592/pexels-photo-164592.jpeg");
+  background-image: url("./images/eduIII.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

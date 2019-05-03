@@ -37,10 +37,10 @@ class Header extends Component {
                 Insurance
               </a>
               <div className="dropdown-menu dropdown-menu-right bg-danger" aria-labelledby="ddlButton">
-                <Link className="dropdown-item" to="/car"><span style={{marginRight: '10px'}}><i className="fa fa-car"></i></span>Auto</Link>
-                <Link className="dropdown-item" to="/boat"><span style={{marginRight: '10px'}}><i className="fa fa-ship"></i></span>Marine</Link>
-                <Link className="dropdown-item" to="/house"><span style={{marginRight: '9px'}}><i className="fa fa-lg fa-home"></i></span>Home</Link>
-                <Link className="dropdown-item" to="/business"><span style={{marginRight: '10px', paddingLeft: '5px'}}><i className="fa fa-building"></i></span>Business</Link>
+                <Link className="dropdown-item" to="/car">Auto</Link>
+                <Link className="dropdown-item" to="/boat">Marine</Link>
+                <Link className="dropdown-item" to="/house">Home</Link>
+                <Link className="dropdown-item" to="/business">Business</Link>
               </div>
             </div>
 

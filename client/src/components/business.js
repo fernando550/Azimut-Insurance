@@ -3,10 +3,17 @@ import React, {Component} from 'react';
 class Business extends Component {
   render() {
     return (
-      <div id="house-component">
+      <div id="busi-component" style={
+        {backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg")',
+        backgroundSize: 'contain',
+        backgroundPosition: 'top',
+        marginTop: '-226px'
+      }
+      }>
 
         {/* HEADER-1 */}
-        <h1 id="house-header-1" className="container py-3">Business Insurance</h1>
+        <div id="busi-header-1" className="container" style={{height: '500px'}}></div>
+        <h1 className="container py-3">Business Insurance</h1>>
 
         {/* PANEL-1 */}
         <div id="house-panel-1" className="panel-insurance p-5" >

@@ -3,10 +3,17 @@ import React, {Component} from 'react';
 class Boat extends Component {
   render() {
     return (
-      <div id="boat-insurance-component">
+      <div id="boat-insurance-component" style={
+        {backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/04/26/15/42/yacht-740610_1280.jpg")',
+        backgroundSize: 'contain',
+        backgroundPosition: 'top',
+        marginTop: '-226px'
+      }
+      }>
 
         {/* HEADER-1 */}
-        <h1 id="boat-header-1" className="container py-3">Marine Insurance</h1>
+        <div id="boat-header-1" className="container" style={{height: '500px'}}></div>
+        <h1 className="container py-3">Marine Insurance</h1>
 
         {/* PANEL-1 */}
         <div id="boat-panel-1" className="panel-insurance p-5">
@@ -27,10 +34,6 @@ class Boat extends Component {
               <br/>
               <p style={{fontSize: '20px'}}>Click the link for a quote: <a href="/boatApp" target="_blank" style={{color: 'red', textDecoration: "underline"}}>Marine Insurance Application</a></p>
 
-            </div>
-
-            <div className="col-sm-6 image-container">
-              <div id="boat-panel-1-img"></div>
             </div>
           </div>
         </div>
