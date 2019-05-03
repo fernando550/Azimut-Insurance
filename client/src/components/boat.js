@@ -6,7 +6,7 @@ class Boat extends Component {
     return (
       <div id="boat-insurance-component" style={
         {backgroundImage: `url(${Yacht})`,
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundPosition: 'top',
         marginTop: '-226px'
       }

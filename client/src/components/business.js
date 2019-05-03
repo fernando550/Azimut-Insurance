@@ -6,7 +6,7 @@ class Business extends Component {
     return (
       <div id="busi-component" style={
         {backgroundImage: `url(${BusPic})`,
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundPosition: 'top',
         marginTop: '-226px'
       }

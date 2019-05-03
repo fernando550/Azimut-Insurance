@@ -6,7 +6,7 @@ class House extends Component {
     return (
       <div id="house-component" style={
         {backgroundImage: `url(${HousePic})`,
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundPosition: 'top',
         marginTop: '-226px'
       }}>
