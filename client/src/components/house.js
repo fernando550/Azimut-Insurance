@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import HousePic from '../images/modernhouse.jpg';
 
 class House extends Component {
   render() {
     return (
       <div id="house-component" style={
-        {backgroundImage: 'url("https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg")',
+        {backgroundImage: `url(${HousePic})`,
         backgroundSize: 'contain',
         backgroundPosition: 'top',
         marginTop: '-226px'

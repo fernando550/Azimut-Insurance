@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import Yacht from '../images/modernyacht.png';
 
 class Boat extends Component {
   render() {
     return (
       <div id="boat-insurance-component" style={
-        {backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/04/26/15/42/yacht-740610_1280.jpg")',
+        {backgroundImage: `url(${Yacht})`,
         backgroundSize: 'contain',
         backgroundPosition: 'top',
         marginTop: '-226px'

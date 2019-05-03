@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import BusPic from '../images/modernoffice.jpg';
 
 class Business extends Component {
   render() {
     return (
       <div id="busi-component" style={
-        {backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg")',
+        {backgroundImage: `url(${BusPic})`,
         backgroundSize: 'contain',
         backgroundPosition: 'top',
         marginTop: '-226px'
