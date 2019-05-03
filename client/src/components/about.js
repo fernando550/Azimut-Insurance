@@ -48,7 +48,7 @@ class About extends Component {
                 Eduardo G. Justo, III ("Eddie") founded Azimut Insurance Consultants in 2017 with the purpose of adding value to the client's life.
                 Eddie is licensed as a Resident General Lines Insurance Agent (2-20 General Lines - Property, Casualty, Surety, Marine, Health,
                 and Miscellaneous Lines) by the state of Florida. He is also licensed in Surplus Lines and holds a 1-20 Surplus Lines License and is
-                currently completing his elite designations as a "Chartered Property Casualty Underwriter". Eddie graduate from Florida Gulf Coast University,
+                currently completing his elite designations as a "Chartered Property Casualty Underwriter". Eddie graduated from Florida Gulf Coast University,
                 holding a Bachelor of Science in Business management as well as a Minor in Marketing.
               </h6>
             </div>

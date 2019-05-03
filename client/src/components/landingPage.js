@@ -13,7 +13,7 @@ class Home extends Component {
           <div className="col-sm-6 align-items-center mx-auto">
             <h2 className="pb-5 text-align-center">Why Choose Us?</h2>
             <div className="text-align-center">
-              <p style={{fontSize:'20px'}}>We are an independent insurance brokerage that aims to add value to your lifestyle.
+              <p style={{fontSize:'20px'}}>We are an independent insurance brokerage firm that aims to add value to your lifestyle.
               We only partner with leading insurance companies to ensure you the best product for your risks and needs.
               We are one of the few agencies in Florida licensed in Excess and Surplus lines of insurance making
               our brokerage unique and exceptional for all your insurance needs. </p>
